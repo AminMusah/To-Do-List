@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', cursive;
+    background-color: #111111;
+}
+
+h1 {
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+header {
+    text-align: center;
+    font-size: 60px;
+    background-color: #111111;
+    color: #ffffff;
+    margin: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-todo, .create-sub-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    margin: 20px;
+} 
+
+.create-todo {
+    width: 30%;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.create-sub-todo {
+    width: 50%;
+    display: none;
+}
+
+.pop-up{
+    display: flex;
+}
+
+.input-text, .input-sub-text {
+    border: none;
+    padding: 5px;
+    width: 70%;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.input-text {
+    color: #ffffff;
+}
+
+.add-todo, .add-sub-todo, .delete-sub-todo, .list-style {
+    border: none;
+    padding: 5px;
+    background: none;
+    outline: none;
+    transition: 0.1s linear;
+    margin: 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.add-todo {
+    color: white;
+}
+
+.add-todo:hover, .add-sub-todo:hover, .delete-sub-todo:hover{
+    transform: scale(1.1);
+}
+
+.create-list, .create-sub-list {
+    width: 70%;
+    margin: 20px 60px 0 0;
+}
+
+.add-new, .add {
+    width: 80%;
+}
+
+.border {
+    height: 1px;
+    width: 17%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.border-sub {
+    height: 1px;
+    width: 28%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    .create-sub-todo {
+        display: none;
+    }
+
+    .create-todo {
+        width: 100%;
+    }
+
+    .border{
+        width: 53%;
+    }
+}
