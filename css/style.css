@@ -19,7 +19,7 @@ header {
     font-size: 60px;
     background-color: #111111;
     color: #ffffff;
-    margin: 50px;
+    margin: auto;
 }
 
 main {
@@ -32,19 +32,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
-    margin: 20px;
 } 
 
 .create-todo {
     width: 30%;
     background-color: #111111;
     color: #ffffff;
+    height: 70vh;
 }
 
 .create-sub-todo {
     width: 50%;
     display: none;
+    height: 70vh;
 }
 
 .pop-up{
@@ -80,7 +80,7 @@ main {
     color: white;
 }
 
-.add-todo:hover, .add-sub-todo:hover, .delete-sub-todo:hover{
+.add-sub-todo:hover, .delete-sub-todo:hover{
     transform: scale(1.1);
 }
 
